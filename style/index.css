@@ -1,0 +1,140 @@
+body{
+    margin: 0%;
+    padding-inline-start: 2%;
+    
+}
+
+nav{
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    margin: 0px;
+    margin-top: 15px;
+    margin-left: 11px;
+}
+
+header{
+    display: flex;
+    height: 20%;
+}
+
+#help{
+    display: flex;
+}
+
+#logo{
+    height: 140px; 
+    width: 120px;
+    margin-top: 10px;
+}
+
+#btn{
+    
+    width: 8%;
+    height: 50px;
+    background-color: rgb(40, 143, 228);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-top: 37px;
+    font-size: large;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 20px;
+    font-size: small;
+    
+}
+
+#btn2{
+
+    width: 8%;
+    height: 50px;
+    background-color: rgb(19, 86, 141);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-top: 37px;
+    font-size: large;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 20px;
+    font-size: 13px;
+    
+}
+
+input{
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    padding: 5px;
+}
+
+.login-input{
+    width: 35%;
+    height: 55px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+
+body{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3),rgba(0, 0, 0, 0.3)), url(../img/pagcadastro.png);
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(121, 153, 214);
+}
+
+#help{
+    display: flex;
+    margin-top: 30px;
+}
+
+#btn:hover{
+    background-color: rgb(10, 64, 163);
+    transition-duration: 0.3s;
+}
+
+#btn2:hover{
+    background-color: rgb(4, 23, 58);
+    transition-duration: 0.4s;
+}
+
+main{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 80%;
+    
+}
+
+
+#titulo{
+    margin-top: 15px;
+    width: 150px;
+    height: 90px ;
+}
+
+#desc{
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:rgb(4, 23, 58);
+    width: 50%;
+    margin-top: 2%;
+    
+}
+#gatos{
+    width: 20%;
+    display: flex;
+    align-items: end;
+    
+}
+
+#gatinhos{
+    width: 100%;
+   
+    
+
+}

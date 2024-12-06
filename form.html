@@ -1,0 +1,233 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="/enviar" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+        
+        <label for="Idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required>
+        <br><br>
+        <div>
+            <label for="sexo">Sexo:</label>
+        </div>
+        <input type="radio" id="masculino" name="sexo" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="feminino" name="sexo" value="feminino">
+        <label for="feminino">Feminino</label>
+        <br><br>
+        <div id="espaco">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            
+        </div>
+        <br><br>
+        
+        <h3>Como se sente?</h3>
+        
+        <label for="gerais">Você tem sentido uma tristeza persistente <br>
+            ou falta de interesse <br>
+        nas atividades diárias?
+        </label> <br>
+        <div>
+            <input type="radio" id="sim" name="sintomas" value="sim">
+            <label for="sim">sim</label>
+            <input type="radio" id="nao" name="sintomas" value="não">
+            <label for="nao">não</label>
+        </div>
+        
+        <br><br>
+
+        <div>
+            <label for="gerais">Experimentou alterações de apetite <br>
+                (aumento ou diminuição significativos)?
+            </label> <br>
+            <input type="radio" id="sim" name="sintomas" value="sim">
+            <label for="sim">sim</label>
+            <input type="radio" id="nao" name="sintomas" value="não">
+            <label for="nao">não</label>
+            
+
+
+        </div>
+    
+        <br><br>
+
+        <div>
+            <label for="gerais">Tem enfrentado dificuldades para dormir <br>
+                (insônia ou sono excessivo)?
+            </label><br>
+            <input type="radio" id="sim" name="sintomas" value="sim">
+            <label for="sim">sim</label>
+            <input type="radio" id="nao" name="sintomas" value="não">
+            <label for="nao">não</label>
+
+
+        </div>
+
+        <h3>Como está sua ansiedade?</h3>
+
+        <div>
+            <label for="">Você tem sentido uma tensão constante, <br>
+                nervosismo ou preocupação exessiva? <br>
+            </label><br>
+            <input type="radio" name="ansiedade" id="sim">
+            <label for="sim">sim</label>
+            <input type="radio" name="ansiedade" id="nao">
+            <label for="ansiedade">não</label>
+
+
+        </div>
+
+        <br><br>
+
+        <div>
+            <label for="">Tem esperimentado ataques de pânico ou sensação de <br>
+                falta de ar?<br><br>
+                </label><br>
+                <br>
+                <input type="radio" name="" id="sim">
+                <label for="">sim</label>
+                <input type="radio" name="" id="nao">
+                <label for="">não</label>
+
+
+        </div>
+
+        <h3>Como está seus relacionamentos?</h3>
+
+        <div>
+            <label for="">Como você avalia seus relacionamentos interpessoais? <br>
+                Há conflitos frequentes?
+                </label><br>
+                <input type="radio" id="sim">
+                <label for="">sim</label>
+                <input type="radio" id="nao">
+                <label for="">não</label>
+
+        </div>
+
+        <br><br>
+
+        <div>
+            <label for="">Sente-se isolado ou com dificuldade em se conectar com os outros?</label><br>
+            <input type="radio" id="sim">
+            <label for="">sim</label>
+            <input type="radio" id="nao">
+            <label for="">não</label>
+
+        </div>
+
+        <br><br>
+
+        <h3>Como está sua autoestima?</h3>
+
+        <div>
+            <label for="">Como você se sente em relação a si mesmo ultimamente?</label><br>
+            <input type="radio" id="horrivel">
+            <label for="">horrível</label>
+            <input type="radio" id="ruim">
+            <label for="">ruim</label>
+            <input type="radio" id="bom">
+            <label for="">bom</label>
+            <input type="radio" id="otimo">
+            <label for="">ótimo</label>
+
+        </div>
+
+        <br><br>
+
+        <div>
+            <label for="">Tem tido pensamentos negativos frequentes sobre sua <br>
+                aparência ou capacidades?</label><br>
+            <input type="radio" id="sim">
+            <label for="">sim</label>
+            <input type="radio" id="nao">
+            <label for="">não</label>
+
+        </div>
+
+        <br><br>
+
+        <h3>Como está seu nível de estresse?</h3>
+
+        <div>
+            <label for="">Você tem enfrentado situações estressantes recentemente? <br>
+                Quais são elas?</label><br>
+            <input type="text" id="motivos">
+            <label for=""></label>
+
+        </div>
+
+        <br><br>
+
+        <div>
+            <label for="">Como você lida com o estresse no seu dia a dia?</label><br>
+            <input type="text" id="como lidar">
+
+        </div>
+
+        <br><br>
+
+        <h3>E como vai seu hitórico pessoal e familiar?</h3>
+
+        <div>
+            <label for="">Já foi diagnosticado(a) com algum transtorno mental <br>
+                anteriormente?</label><br>
+            <input type="radio" id="sim">
+            <label for="">sim</label>
+            <input type="radio" id="nao">
+            <label for="">não</label>
+
+        </div>
+
+        <br><br>
+
+        <div>
+            <label for="">Existe histórico de problemas de saúde mental na <br>
+                sua família?</label> <br>
+            <input type="radio" id="sim">
+            <label for="">sim</label>
+            <input type="radio" id="nao">
+            <label for="">não</label>
+
+        </div>
+
+        <h3>Comportamentos de riscos</h3>
+
+        <div>
+            <label for="">Você tem usado álcool, drogas ou outros comportamentos de <br>
+                risco como forma de lidar com suas emoções?</label> <br>
+            <input type="radio" id="sim">
+            <label for="">sim</label>
+            <input type="radio" id="nao">
+            <label for="">não</label>
+
+        </div>
+
+        <br><br>
+
+        <div>
+            <label for="">Tem tido pensamentos suicidas ou de autolesão?
+            </label> <br><br>
+            <input type="radio" id="sim">
+            <label for="">sim</label>
+            <input type="radio" id="nao">
+            <label for="">não</label>
+
+        </div>
+
+        
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

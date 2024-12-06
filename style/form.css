@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    color: #1e90ff;
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+h3 {
+    color: #4682b4;
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 0 auto;
+    font-size: 100px;
+    
+}
+
+label {
+    font-size: 1.2em;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #87cefa;
+    border-radius: 8px;
+    background-color: #f0f8ff;
+    font-size: 1.1em;
+}
+
+input[type="radio"] {
+    margin: 0; /* Remove qualquer margem adicional */
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+}
+
+input[type="radio"] + label {
+    display: inline;
+    margin-right: 20px; /* Espaço entre radio buttons */
+    vertical-align: middle; /* Alinha verticalmente com o radio button */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #4682b4;
+}
+
+/* Adicionando espaçamento entre perguntas */
+form > div {
+    margin-bottom: 30px; /* Espaço entre blocos de perguntas */
+}
+
+/* Para evitar br que possam bagunçar o layout */
+br {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    form {
+        padding: 60px;
+        font-size: 1.3em;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"] {
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+
+    input[type="submit"] {
+        font-size: 1.7em;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 3.5em;
+        margin-bottom: 50px;
+    }
+
+    h3 {
+        font-size: 2.2em;
+        margin-top: 40px;
+    }
+}
+
+#espaco{
+    margin-top: 50px;
+}

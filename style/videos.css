@@ -1,0 +1,79 @@
+#logo{
+  width: 110px;
+  margin-left: 10px;
+}
+header{
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  margin: none;
+}
+
+a{
+  color:rgb(12, 12, 12);
+  text-decoration: none;
+}
+
+#nav2{
+  margin-left: 60%;
+  font-size: 20px;
+}
+
+#nav3{
+  margin-left: 5%;
+  font-size: 20px;
+}
+
+#sinopse{
+  width: 40%;
+  text-align: justify;
+  padding: 25px;
+  display: flex;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  padding-left: 200px;
+  padding: auto; 
+}
+
+body{
+  background-image: url(../img/é.png)
+}
+
+a:hover{
+  cursor: pointer;
+  color: rgba(48, 48, 48, 0.692);
+  transition: 0.2s;
+  font-size: 30px;
+}
+
+#videos{
+  display: flex;
+}
+
+#videos img{
+  width: 250px;
+  margin: 35px;
+  border-radius: 5px;
+}
+
+#videos  img:hover{
+  width: 300px;
+  transform:scale(1,1) ;
+  transition-duration: 0.3s;      
+}
+
+       
+#videos2{
+  display: flex;
+}
+#videos2 img{
+  width: 250px;
+  margin: 35px;
+  border-radius: 5px;
+}
+
+#videos2  img:hover{
+  width: 300px;
+  transform:scale(1,1) ;
+  transition-duration: 0.3s;
+}
+
