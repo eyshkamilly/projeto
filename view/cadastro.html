@@ -1,0 +1,69 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo primaria.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/cadastro.css">
+    <title>Cadastro</title>
+    <script>
+        function validarFormulario(event) {
+            const nome = document.getElementById("nome").value.trim();
+            const sobrenome = document.getElementById("sobrenome").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const senha = document.getElementById("senha").value.trim();
+            const confirmarSenha = document.getElementById("confirmarSenha").value.trim();
+            const masculino = document.getElementById("masculino").checked;
+            const feminino = document.getElementById("feminino").checked;
+
+            // Verificação de campos vazios
+            if (!nome || !sobrenome || !email || !senha || !confirmarSenha || (!masculino && !feminino)) {
+                alert("Por favor, preencha todos os campos e selecione o sexo.");
+                event.preventDefault(); // Impede o envio do formulário
+                return false;
+            }
+
+            // Verificação de senha e confirmação
+            if (senha !== confirmarSenha) {
+                alert("As senhas não coincidem.");
+                event.preventDefault(); // Impede o envio do formulário
+                return false;
+            }
+
+            return true; // Permite o envio do formulário se tudo estiver ok
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <img id="logo" src="img/logo primaria.png" alt="Logo">
+    </header>
+
+    <main>
+        <form action="../controller/create.php" id="cadastroForm" onsubmit="return validarFormulario(event)">
+            <div id="cadastro">
+                <h1>Cadastrar-se</h1>
+
+                <input class="login-input" placeholder="Nome" type="text" name="nome" id="nome" required>
+                <input class="login-input" placeholder="Sobrenome" type="text" name="sobrenome" id="sobrenome" required> <br>
+                <input class="login-input" placeholder="Email" type="email" name="email" id="email" required>
+                <input class="login-input" placeholder="Senha" type="password" name="senha" id="senha" required> <br>
+                <input class="login-input" placeholder="Confirmar senha" name="confirmar" type="password" id="confirmarSenha" required> <br>
+
+                <div id="genero">
+                    <h3>Sexo:</h3>
+                    <input type="radio" id="masculino" name="sexo" value="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="feminino" name="sexo" value="feminino">
+                    <label for="feminino">Feminino</label>
+                </div>
+                <br>
+                
+                <input type="submit" id="btn" value="Cadastrar" onclick="window.location.href='cadastroenviado.html'">
+                
+            </div> 
+        </form>
+    </main>
+
+</body>
+</html>

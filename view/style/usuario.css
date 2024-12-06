@@ -1,0 +1,135 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(../img/2.png);
+    margin: 0;
+    padding: 0;
+}
+
+/* Caixa do perfil */
+#caixa {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(79, 142, 145, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Imagem do perfil */
+#perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+}
+
+/* Título */
+h1 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Informações */
+#info {
+    margin: 10px 0;
+    font-size: 16px;
+    color: black;
+}
+
+#info span {
+    margin: 0 5px;
+}
+
+/* Botão de editar */
+#editar {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#editar img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+#editar:hover {
+    background-color: #45a049;
+}
+
+/* Sobre */
+#sobre {
+    margin: 20px 0;
+}
+
+#sobre h2 {
+    font-size: 20px;
+    color: black;
+}
+
+#sobre p {
+    font-size: 16px;
+    color: black;
+    line-height: 1.6;
+}
+
+/* Redes sociais */
+#redes {
+    margin: 20px 0;
+}
+
+#redes h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+#redes-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#redes-links a {
+    text-decoration: none;
+    color: navy;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+#redes-links a:hover {
+    color: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #perfil {
+        width: 120px;
+        height: 120px;
+    }
+
+    #editar {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    #redes-links {
+        flex-direction: column;
+    }
+
+    #redes-links a {
+        margin-bottom: 10px;
+    }
+}

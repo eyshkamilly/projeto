@@ -3,7 +3,7 @@
     $servidor = "localhost";
     $user = "root";
     $pass = "";
-    $db = "cadastro";
+    $db = "tranquilminds";
 
     $conn = new mysqli($servidor, $user, $pass, $db);
 ?>
